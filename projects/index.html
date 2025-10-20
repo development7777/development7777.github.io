@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>development7777 | Projects</title>
+    <meta name="description" content="development7777が手掛けた、プロジェクトの一覧">
+    <link rel="icon" href="../favicon.ico" sizes="any">
+    <link rel="icon" href="../icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=deployed_code" />
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+        /* 追加: ヒーローアイコンをレスポンシブで良いサイズにする */
+        .hero-icon {
+            /* 最小48px、推奨は画面幅の6%、最大96px */
+            font-size: clamp(48px, 6vw, 96px);
+            line-height: 1;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="../_asset/img/development7777_logo_clip.svg" alt="development7777 ロゴ" width="36" height="36" class="me-2">
+                    <span>development7777</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="ナビゲーション切替">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./projects/index.html">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container py-5">
+        <!-- Hero -->
+        <section class="text-center py-5">
+            <span class="material-symbols-outlined d-block mx-auto mb-4 hero-icon">
+                deployed_code
+            </span>
+            <h1 class="display-5 fw-bold">Projects</h1>
+            <p class="lead text-muted mb-4">development7777が手掛けた、プロジェクトの一覧</p>
+        </section>
+
+        <hr>
+
+        <section>
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">OpenRECL</h5>
+                            <p class="card-text">OpenRECLは、UbuntuをベースとしたLinuxです。デスクトップ環境はKDEをベースに作られています。名前は、Open, Refined, Easy, Creative Linuxを略してOpenRECLという名前になっています。</p>
+                            <a class="btn btn-primary" href="https://github.com/development7777/OpenRECL">詳細を見る</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">TalkMate</h5>
+                            <p class="card-text">TalkMateは、ユーザーと話して友達のような存在になれるロボットです。ユーザーの話を聞き、共感し、適切な応答を返すことで、より良いコミュニケーションを実現します。会話の内容の記憶も可能で、ユーザーとの関係を深めることができます。</p>
+                            <a class="btn btn-primary" href="https://github.com/development7777/TalkMate">詳細を見る</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">SignBoard-Web</h5>
+                            <p class="card-text">サインボードを表示させるためのPWA。直観的でシンプルなUIを目指している。</p>
+                            <a class="btn btn-primary" href="https://development7777.github.io/SignBoard-Web/">開く</a>
+                            <a class="btn btn-secondary" href="https://github.com/development7777/SignBoard-Web">詳細を見る</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Bash for Python</h5>
+                            <p class="card-text">Bash for Pythonは、BashのコマンドをPythonでパースし実行できるようにするものです。マルチプラットフォームに対応しており、Windows、macOS、Linuxで動作します。</p>
+                            <a class="btn btn-primary" href="https://github.com/development7777/bash-for-python">詳細を見る</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-light mt-auto">
+        <div class="container text-center py-3">
+            <small class="text-muted">© 2025 development7777</small>
+        </div>
+    </footer>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
