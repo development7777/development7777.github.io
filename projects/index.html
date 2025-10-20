@@ -16,14 +16,67 @@
             'FILL' 0,
             'wght' 400,
             'GRAD' 0,
-            'opsz' 24
+            'opsz' 24;
         }
+
+        /* 共通: ページ全体のベース */
+        :root{
+            --bg:#fbfcff;
+            --muted:#6c757d;
+            --accent:#0d6efd;
+            --card-shadow: 0 6px 20px rgba(15,15,15,0.06);
+        }
+        html,body{
+            height:100%;
+            background:var(--bg);
+            font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+            color:#222;
+        }
+        main.container{
+            max-width:1100px;
+        }
+
         /* 追加: ヒーローアイコンをレスポンシブで良いサイズにする */
         .hero-icon {
-            /* 最小48px、推奨は画面幅の6%、最大96px */
             font-size: clamp(48px, 6vw, 96px);
             line-height: 1;
             display: inline-block;
+            color:var(--accent);
+        }
+
+        /* セクション間の余白と見出し */
+        section.section {
+            padding-top: 2.5rem;
+            padding-bottom: 2.5rem;
+        }
+        section.section h2, section.section h3 {
+            margin-top: 0.25rem;
+        }
+
+        /* カードの見栄え */
+        .row .card {
+            border: 0;
+            border-radius: .75rem;
+            box-shadow: var(--card-shadow);
+            transition: transform .18s ease, box-shadow .18s ease;
+        }
+        .row .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 36px rgba(15,15,15,0.10);
+        }
+        .card .card-body { padding: 1.25rem; }
+
+        /* footer */
+        footer.bg-light { background: linear-gradient(180deg,#f8f9fa, #ffffff); border-top: 1px solid rgba(0,0,0,0.03); }
+        footer small { color: var(--muted); }
+
+        /* ナビゲーションの小さな調整 */
+        .navbar-brand img { border-radius: 6px; }
+        .nav-link { color: rgba(0,0,0,0.7); }
+        .nav-link.active { color: var(--accent); font-weight:600; }
+
+        @media (max-width:576px){
+            main.container { padding-left:1rem; padding-right:1rem; }
         }
     </style>
 </head>
@@ -67,7 +120,7 @@
 
         <hr>
 
-        <section>
+        <section class="section">
             <div class="row row-cols-1 row-cols-md-2 g-4">
                 <div class="col">
                     <div class="card h-100">
